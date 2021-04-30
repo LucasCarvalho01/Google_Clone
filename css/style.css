@@ -27,6 +27,13 @@ a {
   text-decoration: none;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
 .header {
   display: flex;
   justify-content: flex-end;
@@ -76,5 +83,146 @@ a {
 }
 
 .links a:hover {
+  text-decoration: underline;
+}
+
+/* CENTRO */
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 20vh; */
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: content-box;
+  justify-content: center;
+}
+
+.campo-cont {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dfe1e5;
+  border-radius: 30px;
+  flex : 1 1 580px;
+  padding: 10px;
+  justify-content: space-between;
+  cursor: text;
+  width: 100%;
+  margin: 26px 20px 30px;
+}
+
+.campo-cont:hover {
+  box-shadow: 0px 1px 6px rgba(32, 33, 36, .28);
+  border-color: rgba(32, 33, 36, .28);
+}
+
+.campo-cont img:nth-of-type(1) {
+  height: 14px;
+  padding-left: 8px;
+  padding-right: 12px;
+}
+
+.campo-cont img:nth-of-type(2) {
+  height: 24px;
+  padding-right: 4px;
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+.campo {
+  outline: 0px;
+  border: 0;
+  font-size: 1.2em;
+  flex: 100%;
+}
+
+.btn {
+  background: #F8F9FA;
+  border: 1px solid white;
+  font-size: 1.1em;
+  padding: 10px 14px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  border-color: #dfe1e5;
+  cursor: pointer;
+}
+
+.search {
+  margin-right: 10px;
+}
+
+.info-adicional a,
+.info-adicional p {
+  display: inline-block;
+}
+
+.info-adicional a:hover {
+  text-decoration: underline;
+}
+
+
+/* INFORMACOES FINAIS */
+.under {
+  display: flex;
+  flex-direction: column;
+}
+
+.pais {
+  width: 100%;
+  background: #F2F2F2;
+  color: #6F6F6F;
+  padding: 16px 24px;
+  font-size: 1.1em;
+  border-bottom: 1px solid #DADCE0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: #f2f2f2;
+  flex-wrap: wrap;
+  padding: 10px 24px;
+  line-height: 32px;
+}
+
+.setor1 ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.setor1 {
+  display: flex;
+}
+
+.setor2 ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.setor2 {
+  display: flex;
+}
+
+.setor1 ul li,
+.setor2 ul li {
+  margin-right: 24px;
+  font-size: 1.1em;
+  color: #6F6F6F;
+}
+
+.setor1 li:hover,
+.setor2 li:hover {
   text-decoration: underline;
 }
