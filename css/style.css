@@ -39,6 +39,7 @@ a {
   justify-content: flex-end;
   align-items: center;
   padding: 6px 10px;
+  width: 100%;
 }
 
 .perfil {
@@ -85,6 +86,46 @@ a {
 .links a:hover {
   text-decoration: underline;
 }
+
+.menu-mobile {
+  display: none;
+}
+
+@media (max-width: 499px) {
+  .links {
+    display: none;
+  }
+
+  .header {
+    justify-content:  space-between;
+    padding: 6px 0;
+  }
+
+  .menu-mobile {
+    display: flex;
+    align-items: center;
+    flex: auto;
+  }
+
+  .menu-mobile img {
+    width: 24px;
+  }
+
+  .menu-mobile a {
+    text-transform: uppercase;
+    border-bottom: 3px solid white;
+    color: #70757A;
+    padding: 4%;
+    font-weight: bold;
+    font-size: .75rem;
+  }
+
+  #active {
+    border-bottom: 3px solid #4285F4;
+    color: #4285F4;
+  }
+}
+
 
 /* CENTRO */
 .break {
@@ -138,6 +179,10 @@ a {
   cursor: pointer;
 }
 
+.campo-cont img:nth-of-type(3) {
+  display: none;
+}
+
 .campo {
   outline: 0px;
   border: 0;
@@ -172,6 +217,39 @@ a {
   text-decoration: underline;
 }
 
+@media (max-width: 499px) {
+  .logo img {
+    width: 50vw;
+  }
+
+  .campo-cont img:nth-of-type(2) {
+    display: none;
+  }
+
+  .campo-cont img:nth-of-type(3) {
+    display: initial;
+    width: 22px;
+  }
+
+  .info-adicional {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .campo-cont {
+    width: 90vw;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .campo {
+    flex: 1 2 0;
+  }
+}
+
 
 /* INFORMACOES FINAIS */
 .under {
@@ -188,6 +266,8 @@ a {
   border-bottom: 1px solid #DADCE0;
 }
 
+
+/* FOOTER */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -199,21 +279,24 @@ a {
 
 .setor1 ul {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex: auto;
 }
 
 .setor1 {
   display: flex;
+  flex: auto;
 }
 
 .setor2 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex: auto;
 }
 
 .setor2 {
   display: flex;
+  flex: auto
 }
 
 .setor1 ul li,
@@ -226,4 +309,18 @@ a {
 .setor1 li:hover,
 .setor2 li:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 499px) {
+  .setor2 {
+    order: -1;
+  }
+
+  .disappear {
+    display: none;
+  }
+
+  .footer ul li:nth-child(3) {
+    margin-right: 0;
+  }
 }
